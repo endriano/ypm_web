@@ -1,0 +1,100 @@
+Configuración Técnica y Estructura Base
+Stack: Utiliza React (última versión), Vite como herramienta de compilación y Tailwind CSS para los estilos.
+
+Navegación: Implementa React Router para gestionar la navegación entre páginas.
+
+Componentes Reutilizables: Crea componentes para elementos comunes como el Navbar, el Footer, Cards de productos/proyectos y un Formulario de Contacto.
+
+Responsive: El diseño debe ser mobile-first y completamente adaptable a todos los tamaños de pantalla.
+
+2. Estética y Funcionalidades Clave
+Paleta de Colores: Mantén estrictamente los colores corporativos de YPMARINAS, asegurando un contraste adecuado para la accesibilidad.
+
+Primarios: #052A59, #053259
+
+Acentos: #F27141, #A65A49
+
+Neutros: #F2F2F2 (fondos), #595959 (texto)
+
+Temas (Claro/Oscuro):
+
+Implementa un interruptor en el Navbar para alternar entre modo claro y oscuro.
+
+El modo claro será el predeterminado, con fondo #F2F2F2 y texto #595959.
+
+El modo oscuro debe invertir apropiadamente los colores (fondos oscuros con texto claro).
+
+Guarda la preferencia del usuario en localStorage para que se mantenga en futuras visitas.
+
+Internacionalización:
+
+Integra i18next o react-i18next para soportar tres idiomas: español (predeterminado), inglés y francés.
+
+Incluye un desplegable o botones en el Navbar para el cambio de idioma.
+
+Genera traducciones precisas para todo el contenido de la web.
+
+Animaciones e Interactividad:
+
+Utiliza Framer Motion para animaciones fluidas al cargar secciones, desplazamiento o interactuar con elementos.
+
+Implementa efectos hover en botones y tarjetas.
+
+Aplica carga diferida (lazy loading) para imágenes y videos pesados.
+
+Incluye un carrusel para las secciones de proyectos destacados.
+
+3. Estructura de Secciones y Contenido por Página
+Cada sección debe tener su propia página con una URL clara (/, /empresa, /productos, etc.).
+
+Página de Inicio (/):
+
+Header: Un video de alta calidad a pantalla completa o un carrusel de imágenes de proyectos con un eslogan potente y un botón de llamada a la acción.
+
+Quiénes somos (resumen): Un bloque conciso con cifras clave de la empresa (años de experiencia, proyectos realizados) animadas con un contador.
+
+Servicios (resumen): Una sección visual con iconos y títulos de los servicios principales.
+
+Proyectos Destacados: Un carrusel con fotos grandes de 3-4 proyectos recientes.
+
+Certificaciones y Clientes: Un carrusel de logos que se desplace automáticamente.
+
+CTA Final: Un banner atractivo con una invitación clara a contactar.
+
+Página de Empresa (/empresa):
+
+Secciones para Quiénes somos, Misión y Visión, Equipo (con fotos y breves descripciones), y Política de Calidad y Certificaciones.
+
+Integra un bloque visual para mostrar los logotipos de las certificaciones.
+
+Página de Productos (/productos):
+
+Una galería principal con tarjetas o miniaturas visuales para cada categoría de producto: Marinas y Puertos, Varaderos y Astilleros, Playas y Espigones, Construcciones Flotantes, Paseos Marítimos, Acuicultura y Maquinaria Usada. Cada tarjeta debe enlazar a su página de detalle.
+
+Página de Detalle de Producto (/productos/:slug): Para cada producto, crea una página con un título, una galería de fotos/videos, puntos clave con iconos, un bloque de "Datos Técnicos" y un formulario para "Solicitar Presupuesto".
+
+Página de Servicios (/servicios):
+
+Presenta los servicios principales en bloques visuales: Diseño e Ingeniería, Consultoría y Viabilidad, Gestión de Proyectos, Mantenimiento y Servicios Especializados.
+
+Página de Detalle de Servicio (/servicios/:slug): Incluye una descripción detallada, un diagrama de flujo animado del proceso de trabajo y, si es posible, testimonios de clientes.
+
+Página de Proyectos (/proyectos):
+
+Una galería con filtros (por categoría, localización).
+
+Página de Detalle de Proyecto (/proyectos/:slug): Título, localización, una historia del proyecto (el desafío, la solución, el resultado), galería de fotos del antes/durante/después, y un bloque de datos técnicos del proyecto.
+
+Página de Noticias (/noticias):
+
+Un blog con un listado de artículos y sus respectivas páginas de detalle.
+
+Página de Contacto (/contacto):
+
+Un formulario de contacto dinámico que incluya validación en tiempo real.
+
+Los campos mínimos deben ser Nombre, Email, Teléfono y Mensaje.
+
+Utiliza una librería como Email.js o un backend placeholder para la funcionalidad de envío.
+
+Incluye un mapa interactivo de Google Maps.
