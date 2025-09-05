@@ -298,9 +298,9 @@ export default function News() {
                   className="bg-white/10 border-white/30 text-white placeholder:text-white/70"
                   data-testid="newsletter-email"
                 />
-                <Button className="gradient-orange text-white px-6 hover:opacity-90" data-testid="newsletter-submit">
+                <motion.button className="gradient-orange text-white px-6 hover:opacity-90" data-testid="newsletter-submit">
                   {t('news.subscribe')}
-                </Button>
+                </motion.button>
               </div>
             </div>
           </motion.div>
